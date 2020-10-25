@@ -15,20 +15,20 @@
 
 	<main>
 		<form>
-			<div class="input-block">
+			<div class="input-block form-group">
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name" placeholder="Enter your name">
 			</div>
-			<div class="input-block">
+			<div class="input-block form-group">
 				<label for="email">Email</label>
 				<input type="text" name="email" id="email" placeholder="Enter your email">
 			</div>
-			<div class="input-block">
+			<div class="input-block form-group">
 				<label for="age">Age<span><small>(optional)</small></span></label>
 				<input type="number" name="age" id="age" placeholder="Age">
 			</div>
 
-			<div class="input-block">
+			<div class="input-block form-group">
 				<label for="current-role">Which option best describes your current role?</label>
 				<select name="current-role" id="curremt-role">
 					<option value="" disabled selected>Select current role</option>
@@ -40,16 +40,24 @@
 				</select>
 			</div>
 
-			<div class="input-block">
-				<input type="radio" id="definitely" name="recommendation" value="definitely" checked>
-				<label for="definitely" class="line-block">Definitely</label>
-				<input type="radio" id="maybe" name="recommendation" value="maybe">
-				<label for="maybe" class="line-block">Maybe</label>
-				<input type="radio" id="not-sure" name="recommendation" value="not-sure">
-				<label for="not-sure" class="line-block">Not sure</label>
+			<div class="input-block form-group">
+				<label for="definitely" class="input-block">
+					<input type="radio" id="definitely" name="recommendation" value="definitely" checked>
+					<span class="desc">Definitely</span>
+				</label>
+
+				<label for="maybe" class="input-block">
+					<input type="radio" id="maybe" name="recommendation" value="maybe">
+					<span class="desc">Maybe</span>
+				</label>
+
+				<label for="not-sure" class="input-block">
+					<input type="radio" id="not-sure" name="recommendation" value="not-sure">
+					<span class="desc">Not sure</span>
+				</label>
 			</div>
 
-			<div class="input-block">
+			<div class="input-block form-group">
 				<label for="feature">What is your favorite feature of freeCodeCamp?</label>
 				<select name="feature" id="feature">
 					<option value="" disabled selected>Select an option</option>
@@ -60,58 +68,71 @@
 				</select>
 			</div>
 
-			<div class="input-block">
+			<div class="input-block form-group">
 				<p>What would you like to see improve? (Check all that apply)</p>
-				<input type="checkbox" id="frontend" name="frontend">
-				<label for="frontend" class="line-block">Front-end Projects</label>
 
-				<input type="checkbox" id="backend" name="backend">
-				<label for="backend" class="line-block">Back-end Projects</label>
+				<label for="frontend" class="input-block">
+					<input type="checkbox" id="frontend" name="frontend">
+					<span class="desc">Front-end Projects</span>
+				</label>
 
-				<input type="checkbox" id="data" name="data">
-				<label for="data" class="line-block">Data Visialization</label>
+				<label for="backend" class="input-block">
+					<input type="checkbox" id="backend" name="backend">
+					<span class="desc">Back-end Projects</span>
+				</label>
 
-				<input type="checkbox" id="challenges" name="challenges">
-				<label for="challenges" class="line-block">Challenges</label>
+				<label for="data" class="input-block">
+					<input type="checkbox" id="data" name="data">
+					<span class="desc">Data Visialization</span>
+				</label>
 
-				<input type="checkbox" id="open-source" name="open-source">
-				<label for="open-source" class="line-block">Open Source Community</label>
+				<label for="challenges" class="input-block">
+					<input type="checkbox" id="challenges" name="challenges">
+					<span class="desc">Challenges</span>
+				</label>
 
-				<input type="checkbox" id="gotter-help-rooms" name="gotter-help-rooms">
-				<label for="fgotter-help-rooms" class="line-block">Gitter help rooms</label>
+				<label for="open-source" class="input-block">
+					<input type="checkbox" id="open-source" name="open-source">
+					<span class="desc">Open Source Community</span>
+				</label>
 
-				<label for="videos" class="line-block">
+				<label for="fgotter-help-rooms" class="input-block">
+					<input type="checkbox" id="gotter-help-rooms" name="gotter-help-rooms">
+					<span class="desc">Gitter help rooms</span>
+				</label>
+
+				<label for="videos" class="input-block">
 					<input type="checkbox" id="videos" name="videos">
-					Videos
+					<span class="desc">Videos</span>
 				</label>
 
-				<label for="fcity-meetups" class="line-block">
+				<label for="fcity-meetups" class="input-block">
 					<input type="checkbox" id="city-meetups" name="city-meetups">
-					City Meetups
+					<span class="desc">City Meetups</span>
 				</label>
 
-				<label for="wiki" class="line-block">
+				<label for="wiki" class="input-block">
 					<input type="checkbox" id="wiki" name="wiki">
-					Wiki
+					<span class="desc">Wiki</span>
 				</label>
 
-				<label for="forum" class="line-block">
+				<label for="forum" class="input-block">
 					<input type="checkbox" id="orum" name="orum">
-					Forum
+					<span class="desc">Forum</span>
 				</label>
 
-				<label for="aditional" class="line-block">
+				<label for="aditional" class="input-block">
 					<input type="checkbox" id="aditional" name="aditional">
-					Aditional Courses
+					<span class="desc">Aditional Courses</span>
 				</label>
 			</div>
 
-			<div class="input-block">
-				<label for="suggestions">Any comments or suggestions?</label>
+			<div class="input-block form-group">
+				<label for="suggestions" class="msg-label">Any comments or suggestions?</label>
 				<textarea name="suggestions" id="suggestions" placeholder="Enter your comment here..." cols="33" rows="5"></textarea>
 			</div>
 
-			<div class="input-block">
+			<div class="input-block form-group">
 				<input type="submit" class="btn">
 			</div>
 		</form>

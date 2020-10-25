@@ -18,21 +18,27 @@ body {
 	color: #fff;
 }
 
-input[type=text],
-input[type=number],
-input[type=submit],
+input[type="number"],
+input[type="text"],
+input[type="submit"],
 select,
 textarea {
-	width: 90%;
+	width: 100%;
 	padding: .8rem;
 	border: none;
 	border-radius: .4rem;
 	font-size: 1.6rem;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+	transform: scale(1.2);
+}
+
 header {
 	margin: 5rem auto;
 }
+
 
 h1 {
 	font-size: 3.2rem;
@@ -49,40 +55,63 @@ h3 {
 
 p {
 	font-size: 1.6rem;
-}
-
-form {
-	width: 45%;
-	margin: auto;
-	background: rgb(35, 35, 68);
-	padding: 4rem;
-	border-radius: .8rem;
-}
-
-label {
-	font-size: 1.6rem;
-	display: block;
 	text-align: left;
-	margin-left: 5%;
-	margin-bottom: .4rem;
-
+	padding-bottom: .8rem;
 }
 
 span {
 	font-weight: 200;
 }
 
-.line-block {
-	display: inline;
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.input-block {
-	margin: 2.6rem 0;
+form {
+	background: rgb(35, 35, 68);
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6rem 4rem;
+	border-radius: .8rem;
 }
+
+
 
 .btn {
 	background: #37af65;
 	color: #fff;
 	font-size: 1.6rem;
 	cursor: pointer;
+	transition: all .3s ease;
+}
+.input-block {
+	width: 100%;
+	flex: 1 1 8rem;
+}
+
+.form-group {
+	margin-bottom: 3rem;
+}
+
+label {
+	display: flex;
+	padding: .4rem 0;
+	font-size: 1.6rem;
+}
+
+.msg-label {
+	padding-bottom: .8rem;
+}
+
+.desc {
+	padding-left: .8rem;
+}
+
+.btn:hover {
+	background: #388E44;
 }
